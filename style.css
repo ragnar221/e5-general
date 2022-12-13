@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Orbitron:wght@600&family=Roboto:ital,wght@0,500;0,700;0,900;1,300&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: #131415;
+    font-family: 'Montserrat', sans-serif;
+}
+:root {
+    /*AGREGAR COLORES, FUENTES*/
+    --bg-black: #252525;
+    --yellow: #FFA400;
+    --red: #FC2933;
+    --font-color: #ffffff;
+    --bg-gradient: linear-gradient(98.81deg, #ffa100 -0.82%, #ff005c 101.53%);
+ }  
+/*HEADER*/
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0px 100px 0px 30px;
+
+}
+
+.logo  {
+width: 115px;
+margin-bottom: -15px;
+}
+
+.nav-list,
+.navbar {
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.navbar  {
+    gap: 50px;
+}
+
+.nav-p {
+   /*  margin-left: -38px;
+    margin-right: 32px; */
+    color: aliceblue;
+}
+
+a {
+    color: #cb7435;
+    font-size: large;
+}
+
+a :hover  {
+    font-size: larger;
+    color: #ff9a00;
+}
+
+/* HERO */
+
+#hero {
+    background-color: var(--fond-hero);
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    }
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 600px;
+    max-width: 1200px;
+    margin: 6rem;
+    margin-top: 170px;
+}
+.hero-info h1 {
+    color: var(--font-color);
+    font-size: 66px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.hero-info h1 span {
+    font-size: 51px;
+}
+
+.hero-info p {
+    color: var(--font-color);
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.hero-info a {
+    color: var(--font-color);
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
+    width: 28%;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 11px 28px 50px rgba(20, 78, 90, 0.2);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.5;
+    line-height: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.pizza-1 {
+    position: absolute;
+    left: 780px;
+    top: 208px;
+}
+.pizza-2 {
+    position: absolute;
+    left: 900px;
+    top: 94px;
+}
+
+/* RECOMENDADOS */
+
+.section-2{
+    background-color: #131415;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.section-2 h2{
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 131.02%;
+}
+.recomended-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+}
+
+
+.cards{
+background: #252525;
+width: 347px;
+height: 103px;
+left: 197px;
+top: 583px;
+border-radius: 15px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+box-shadow: 0px 0px 50px rgba(1,2,7,0.5);
+}
+
+.card-img{
+    display: flex;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+    left: 13.96%;
+    right: 81.94%;
+    top: 31.97%;
+    bottom: 64.74%;
+   /*  margin-left: 20px; */
+}
+
+.card-text{
+    text-align: left;
+    flex-direction: column;
+   /*  margin-top: 20px;    */
+}
+.card-text p{
+    /* margin: -1px; */
+    align-self: center;
+}
+
+.card-name{
+    color: #ffffff;
+    height: 20px;
+    left: 19.21%;
+    right: 74.11%;
+    top: calc(50% - 20px/2 - 332.5px);
+    font-family: 'montserrat';
+    
+}
+.card-details{
+    color: #ffffff;
+    font-family: 'montserrat';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.5px;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+    }
+
+.card-price{
+    display:flex;
+    font-family: 'montserrat';
+    font-style:normal;
+    font-weight: 700;
+    line-height: 131.02%;
+    background: var(--bg-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+.card-add{
+    display: flex;
+    justify-content: center;
+    width: 85px;
+    height: 29px;
+    color: #ffffff;
+    /* left: 442px;
+    top: 620px; */
+    /* margin: 35px 10px 0px 0px; */
+    background: var(--bg-gradient);
+    border-radius: 17.5px;
+}
+.card-add p{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 54px;
+    height: 15px;
+    left: 458px;
+    top: 627px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+.card-add a{
+    display: flex;
+    text-decoration: none;
+}
+.card-add:hover{
+    box-shadow: #ff9a00 0px 0px 6px 6px;
+    transition: all 0.2s ease-in;
+}
+.card-add:hover p{
+    color: #131415;
+    font-size: 14px;
+    font-weight: 800;
+    transition: all 0.4s ease-in;
+}
+/* CATEGORIAS */
+
+.section-3 {
+    background-color: #131415;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  .section-3 h2 {
+    font-style: normal;
+    font-weight: 650;
+    font-size: 15px;
+    padding-bottom: 30px;
+  }
+  .categories-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+  }
+  .cat {
+    background: #252525;
+    width: 147px;
+    height: 171px;
+    left: 197px;
+    top: 583px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+  }
+  .hover:hover{
+      width: 80px;
+      height: 80px;
+      transform: rotate(27deg) scale(1.1);
+      transition-property: all;
+      transition-duration: 0.7s;
+      
+  }
+  .cat-img{
+    display: flex;
+    align-self: center;
+    width: 86px;
+    height: 86px;
+    left: 878px;
+    top: 839px;
+  }
+  
+   .pizza{
+    display: flex;
+    align-self: center;
+    width: 65px;
+    height: 65px;
+    left: 878px;
+    top: 839px;
+   }
+  .cat-text {
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+    color: #ffffff;
+  }
+  .boxes{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      height: 5px;
+      background: var(--bg-gradient);
+      border-radius: 5px;
+      margin: 8% 0;
+  }
+
+
+
+
+/* Las mas populares */
+.section-4{
+    width: 100%;
+}
+.section-4 h2{
+    font-weight: 500;
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 130%;
+}
+.cards-populary{
+    gap: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-content: center;
+}
+.cards-container{
+    width: 282px;
+    height: 213px;
+    /* padding: 15px;
+    margin: 2rem 0; */
+    gap: 5%;
+    box-shadow:  0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px;
+    background-color: var(--bg-black);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: center;
+    margin: 20px 0;
+}
+.img-card{
+    width: 237px;
+    height: 97px;
+    /* position: absolute; */
+    mix-blend-mode: normal;
+    border-radius: 16px;
+}
+.cards-container:nth-child(1) .img-card{
+    
+    background-image: url(./assets/img/mr-pit.png);
+}
+.cards-container:nth-child(2) .img-card{
+    
+    background-image: url(./assets/img/q-jamone.png);
+}
+.cards-container:nth-child(3) .img-card{
+    
+    background-image: url(./assets/img/charly-garcia.png);
+}
+.cards-container:nth-child(4) .img-card{
+    mix-blend-mode: normal;
+    background-image: url(./assets/img/maradona.png);
+}
+.cards-container:nth-child(5) .img-card{
+    
+    background-image: url(./assets/img/picantovich.png);
+}
+.cards-container:nth-child(6) .img-card{
+
+    background-image: url(./assets/img/la-hasbulla.png);
+}
+.cards-container:nth-child(7) .img-card{
+    
+    background-image: url(./assets/img/leo-messi.png);
+}
+.cards-container:nth-child(8) .img-card{
+    
+    background-image: url(./assets/img/nicky-gii.png);
+}
+.card-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.info-sub-card h3{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 15px;
+}
+.info-sub-card p{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.5px;
+    opacity: 0.3;
+}
+.info-sub-card .price{
+    height: 25px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 130%;
+    background: var(--bg-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    opacity: 1;
+}
+
+.card-info .card-add{
+   /*  width: 54px;
+    height: 15px; */
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.5;
+    padding: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    /* background-color:   */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 48px 128px;
+    background: rgb(19, 20, 21);
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+ 
+}
+.foot a {
+    color: #ffffff;
+    font-size: small;
+}
+.img-footer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+
+}
