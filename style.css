@@ -138,7 +138,7 @@ a :hover  {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    line-height: 131.02%;
+    /*line-height: 131.02%;*/
 }
 .recomended-cards{
     display: flex;
@@ -250,12 +250,7 @@ box-shadow: 0px 0px 50px rgba(1,2,7,0.5);
     box-shadow: #ff9a00 0px 0px 6px 6px;
     transition: all 0.2s ease-in;
 }
-.card-add:hover p{
-    color: #131415;
-    font-size: 14px;
-    font-weight: 800;
-    transition: all 0.4s ease-in;
-}
+
 /* CATEGORIAS */
 
 .section-3 {
@@ -304,6 +299,7 @@ box-shadow: 0px 0px 50px rgba(1,2,7,0.5);
   .cat-img{
     display: flex;
     align-self: center;
+    text-align: center;
     width: 86px;
     height: 86px;
     left: 878px;
@@ -477,4 +473,31 @@ footer {
     display: flex;
     justify-content: center;
 
+}
+
+@media (max-width :992px) {
+    header {
+        max-width: 100%;
+
+    }
+
+    .pizza-1{
+        display: none;
+    }
+    .pizza-2{
+        display: none;
+    }
+
+    .recomended-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .categories-cards{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .cards-populary{
+        gap: 2%;
+    }
 }
